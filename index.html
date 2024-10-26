@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<script src="script.js" type="text/javascript"></script>
+	<title>Formularz satysfakcji studenta</title>
+</head>
+<body class="body">
+	<img src="logo.jpg" alt="logo"> 
+<header>
+	<h1>Ankieta zadowolenia studentów z kierunku Informatyka na uczelni Akademia Nauk Stosowanych w Elblągu</h1>
+</header>
+<p class="paragraph">Zwracamy się z uprzejmą prośbą o udział w ankiecie dotyczącej Waszego zadowolenia z wyboru kierunku informatycznego na Akademii Nauk Stosowanych w Elblągu. Celem badania jest poznanie Waszych opinii na temat obecnych warunków studiowania, dowiedzenie się, co szczególnie Wam odpowiada, a także zidentyfikowanie obszarów, które wymagają usprawnień. Wasze odpowiedzi pomogą nam lepiej dostosować program i warunki studiów do Waszych potrzeb.</p>
+<fieldset>
+	<legend>Ankieta</legend>
+	<form method="post" action="https://www.w3schools.com/action_page.php" name="formularz" class="form" id="formularz">
+	<p class="paragraph">
+		<label class="label">
+		<span> 1. Jak oceniasz ogólne zadowolenie ze studiów na kierunku informatyka?</span>
+	</label><br>
+		<input type="radio" name="satisfaction" value="bardzo zadowolony"> Bardzo zadowolony 
+		<input type="radio" name="satisfaction" value="zadowolony"> Zadowolony
+		<input type="radio" name="satisfaction" value="neutralny"> Neutralny <br>
+		<input type="radio" name="satisfaction" value="niezadowolony"> Niezadowolony
+	
+</p>
+	<p class="paragraph">
+	<label class="label">
+	<span>2. Dostęp do zasobów dydaktycznych</span>
+</label>
+<input type="checkbox" name="resources" value="skrypty"> Skrypty
+<input type="checkbox" name="resources" value="prezentacje"> Prezentacje
+<input type="checkbox" name="resources" value="e-learning"> Materiały e-learningowe <br>
+<input type="checkbox" name="resources" value="warsztaty"> Warsztaty
+<input type="checkbox" name="resources" value="inne"> Inne
+</p>
+<p class="paragraph">
+	<label class="label">
+		<span>3. Na ile satysfakcjonuje Cię liczba godzin wykładów, ćwiczeń i laboratoriów w semestrze?</span>
+	</label><br>
+<input type="range" name="hours_satisfaction" min="1" max="5" step="1">
+<p>1 = wcale, 5 = bardzo</p>
+<p class="paragraph">
+	<label class="label"><span>4. Jak oceniasz poziom trudności zajęć na swoim kierunku?</span></label><br>
+<select name="difficulty">
+   <option value="zbyt niski">Zbyt niski</option>
+   <option value="odpowiedni">Odpowiedni</option>
+   <option value="zbyt wysoki">Zbyt wysoki</option>
+</select>
+</p>
+<p class="paragraph">
+	<label class="label"><span> 5. Na ile oceniasz wsparcie otrzymywane od wykładowców? (od 1 do 10)</span></label><br>
+<input type="number" name="support" min="1" max="10" required>
+</p>
+<p class="paragraph">
+	<label class="label">
+		<span> 6. Czy uważasz, że pomoc techniczna jest wystarczająco dostępna?</span>
+	</label><br>
+<input type="radio" name="tech_support" value="tak"> Tak<br>
+<input type="radio" name="tech_support" value="nie"> Nie<br>
+</p>
+<p class="paragraph">
+	<label class="label"><span>7. Jaką formę zajęć preferujesz?</span></label><br>
+	<select name="class_format">
+	   <option value="stacjonarna">Stacjonarna</option>
+	   <option value="zdalna">Zdalna</option>
+	   <option value="hybrydowa">Hybrydowa</option>
+	</select>
+</p>
+<p class="paragraph">
+	<label class="label">
+		<span>8. Czy masz wystarczający dostęp do materiałów online?</span>
+	</label><br>
+<input type="checkbox" name="materials_access" value="tak"> Tak<br>
+<input type="checkbox" name="materials_access" value="nie"> Nie<br>
+</p>
+<p class="paragraph">
+	<label class="label">9. Czy poleciłbyś kierunek informatyka na ANS w Elblągu innym osobom?</label><br>
+<input type="radio" name="recommend" value="zdecydowanie tak"> Zdecydowanie tak<br>
+<input type="radio" name="recommend" value="raczej tak"> Raczej tak<br>
+<input type="radio" name="recommend" value="raczej nie"> Raczej nie<br>
+<input type="radio" name="recommend" value="zdecydowanie nie"> Zdecydowanie nie<br>
+</p>
+<p class="paragraph">
+<label class="label">
+<span>10. Podaj swoje imię i nazwisko oraz adres e-mail, a w ramach podziękowania za wypełnienie ankiety otrzymasz kod rabatowy w wysokości 5% na kolejny semestr.</span></label><br>
+<input type="text" name="Imię i nazwisko" required><br>
+<input type="email" name="Adres e-mail" required><br>
+</p>
+<button type="submit" class="button">Wyślij</button>
+</form>
+</fieldset> 
+
+</body>
+</html>

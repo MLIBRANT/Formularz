@@ -1,0 +1,50 @@
+.body {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    max-width: 700px;
+    line-height: 1.5;
+    padding: 2px;
+    font-size: 18px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 370px;
+}
+
+
+.form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333333;
+}
+
+
+.button:hover {
+    background-color: #4a8bc1;
+}
+
+
+.paragraph {
+    font-size: 0.9em;
+    color: #666666;
+    margin-top: -10px;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 15px 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
